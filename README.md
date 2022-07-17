@@ -1,122 +1,39 @@
-Contribution: 2022-02-10 20:00
+# Getting Started with Create React App
 
-Contribution: 2022-02-10 20:01
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Contribution: 2022-02-19 20:00
+## Available Scripts
 
-Contribution: 2022-02-21 20:00
+## Upload build file to apps/danapay-webapp-v3
 
-Contribution: 2022-02-23 20:00
+Make sure you have your ssh key uploaded to the digital ocean droplet.
 
-Contribution: 2022-02-23 20:01
+```js
+scp -r ./build/ danapay@157.230.117.52:/home/danapay/apps/danapay-webapp-v3
+```
 
-Contribution: 2022-02-27 20:00
+import 'react-app-polyfill/stable';
+npm install react-app-polyfill core-js
 
-Contribution: 2022-02-27 20:01
+### technologies
 
-Contribution: 2022-03-09 20:00
+Toolchain => create-react-app
+State management => redux toolkit
+Ui framework => tailwind, bootstrap and material ui
+Axios for => api requests
 
-Contribution: 2022-03-09 20:01
+What is the difference in "is_active" and "is_verified" in user?
+And what does mean "not verified"?
+There are 2 types of user: company and individual. (Yes)
+So if user is individual, "not verified" means having false value of "is_verified" field? And  "is_active" field? If user is in company, what is the condition meaning " not verified"?
 
-Contribution: 2022-03-10 20:00
+company user 
+Activated by danapay => becomes is_active
+Verified when the documents are uploaded and verified => becomes is_verified
+not verified is when the danapay admin hasnt verified the document.
 
-Contribution: 2022-03-10 20:01
 
-Contribution: 2022-03-18 20:00
-
-Contribution: 2022-03-18 20:01
-
-Contribution: 2022-03-19 20:00
-
-Contribution: 2022-03-20 20:00
-
-Contribution: 2022-03-20 20:01
-
-Contribution: 2022-03-25 20:00
-
-Contribution: 2022-03-29 20:00
-
-Contribution: 2022-04-01 20:00
-
-Contribution: 2022-04-01 20:01
-
-Contribution: 2022-04-03 20:00
-
-Contribution: 2022-04-05 20:00
-
-Contribution: 2022-04-05 20:01
-
-Contribution: 2022-04-06 20:00
-
-Contribution: 2022-04-08 20:00
-
-Contribution: 2022-04-12 20:00
-
-Contribution: 2022-04-12 20:01
-
-Contribution: 2022-04-14 20:00
-
-Contribution: 2022-04-16 20:00
-
-Contribution: 2022-04-17 20:00
-
-Contribution: 2022-04-17 20:01
-
-Contribution: 2022-04-18 20:00
-
-Contribution: 2022-04-21 20:00
-
-Contribution: 2022-04-21 20:01
-
-Contribution: 2022-04-23 20:00
-
-Contribution: 2022-04-23 20:01
-
-Contribution: 2022-04-26 20:00
-
-Contribution: 2022-04-26 20:01
-
-Contribution: 2022-04-27 20:00
-
-Contribution: 2022-04-28 20:00
-
-Contribution: 2022-04-28 20:01
-
-Contribution: 2022-05-04 20:00
-
-Contribution: 2022-05-04 20:01
-
-Contribution: 2022-05-06 20:00
-
-Contribution: 2022-05-06 20:01
-
-Contribution: 2022-05-09 20:00
-
-Contribution: 2022-05-10 20:00
-
-Contribution: 2022-05-13 20:00
-
-Contribution: 2022-05-14 20:00
-
-Contribution: 2022-05-16 20:00
-
-Contribution: 2022-05-17 20:00
-
-Contribution: 2022-05-17 20:01
-
-Contribution: 2022-05-18 20:00
-
-Contribution: 2022-05-21 20:00
-
-Contribution: 2022-05-21 20:01
-
-Contribution: 2022-05-23 20:00
-
-Contribution: 2022-05-25 20:00
-
-Contribution: 2022-05-25 20:01
-
-Contribution: 2022-05-26 20:00
-
-Contribution: 2022-05-27 20:00
-
+individual user
+Activated by danapay Admin => becomes is_active
+Verified after sumsub response status by the admin  => becomes is_verified
+not verified is if KYC failed 
